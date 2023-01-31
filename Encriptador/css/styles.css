@@ -67,19 +67,31 @@ section{
     
 }
 
+
+
 .botones{
     margin-top: 20px;
     text-align: center;
 }
-.encriptar{
+
+
+#encriptar{
     width: 30%;
     height: 40px;
     border-radius: 20px;
     border: 0;
     background-color: #2C3333;
     color: white;
-
 }
+#desencriptar{
+    width: 30%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #2C3333;
+    color: white;
+}
+
 
 
 
@@ -118,12 +130,12 @@ section{
     height:155px;
     border-radius: 20px;
     resize: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 
 
-.boton-copiar{
+#boton-copiar{
     width: 30%;
     height: 40px;
     border-radius: 20px;
@@ -131,6 +143,7 @@ section{
     background-color: #2C3333;
     color: white;
     margin: 5px;
+    display: none;
 }
 
 

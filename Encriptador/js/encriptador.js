@@ -16,26 +16,42 @@
 // "gato" => "gaitober"
 // gaitober" => "gato"
 
-// let letra = "e" ; "enter"
-// let letra = "i" ; "imes"
-// let letra = "a" ; "ai"
-// let letra = "o" ; "ober"
-// let letra = "u" ; "ufat"
-
-//                   "enter"
-// let letra = "i" ; "imes"
-// let letra = "a" ; "ai"
-// let letra = "o" ; "ober"
-// let letra = "u" ; "ufat"
-
+/*-----------Funcion encriptar---------------*/
 function encriptar(){
-    let texto = document.getElementById("texArea").value.toLowerCase();
+    var texto = document.getElementById("textArea").value.toLowerCase();
+
+var texArea = texto.replace(/e/img,"enter");
+var texArea = texArea.replace(/o/img,"ober");   
+var texArea = texArea.replace(/i/img,"imes");
+var texArea = texArea.replace(/a/img,"ai");
+var texArea = texArea.replace(/u/img,"ufat");
+
+
+
+
+document.getElementById("textoDesencriptado").innerHTML = texArea;
+document.getElementById("boton-copiar").style.display = "show";
+document.getElementById("boton-copiar").style.display = "inherit";  
 }
+/*-----------Funcion Desencriptar---------------*/
+function desencriptar(){
+    var texto = document.getElementById("textArea").value.toLowerCase();
 
-var texArea = texto.replace(/e/img, "enter");
-var texArea = texto.replace(/0/img, "ober");   
-var texArea = texto.replace(/i/img, "imes");
-var texArea = texto.replace(/a/img, "ai");
-var texArea = texto.replace(/u/img, "ufat");
+var texArea = texto.replace(/enter/img,"e");
+var texArea = texArea.replace(/ober/img,"o");   
+var texArea = texArea.replace(/imes/img,"i");   
+var texArea = texArea.replace(/ai/img,"a");
+var texArea = texArea.replace(/ufat/img,"u"); 
 
-document.getElementById("texto").innerHTML = texArea;
+
+document.getElementById("textoDesencriptado").innerHTML = texArea;
+document.getElementById("boton-copiar").style.display = "show";
+document.getElementById("boton-copiar").style.display = "inherit";
+}
+/*-----------Funcion Copiar---------------*/
+function copy(){
+    var contenido = document.querySelector("#textoDesencriptado");
+    contenido.select();
+    document.execCommand("copy");
+    alert("Texto copiado");
+}
