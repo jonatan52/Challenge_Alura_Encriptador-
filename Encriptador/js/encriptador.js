@@ -37,3 +37,5 @@ var texArea = texto.replace(/0/img, "ober");
 var texArea = texto.replace(/i/img, "imes");
 var texArea = texto.replace(/a/img, "ai");
 var texArea = texto.replace(/u/img, "ufat");
+
+document.getElementById("texto").innerHTML = texArea;

@@ -83,7 +83,7 @@ section{
 
 
 
-.imagen{
+.seccion-imagen{
     width: 30%;
     /* background-color: rgb(255, 255, 255); */
     background-color: rgb(83, 83, 83);
@@ -113,6 +113,16 @@ section{
     margin: 10px;
 }
 
+#textoDesencriptado{
+    width: 325px;
+    height:155px;
+    border-radius: 20px;
+    resize: none;
+    padding: 5px;
+}
+
+
+
 .boton-copiar{
     width: 30%;
     height: 40px;
@@ -120,6 +130,7 @@ section{
     border: 0;
     background-color: #2C3333;
     color: white;
+    margin: 5px;
 }
 
 
