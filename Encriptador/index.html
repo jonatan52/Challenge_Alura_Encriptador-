@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,44 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/encriptador.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Challenger Alura</h1>
     </header>
     <!-- <hr> -->
     <main class="main">
-        
+        <!--- Seccion Uno --->
         <section class="seccion-uno">
-            
-            <textarea  id="textArea"  placeholder="Ingresa tu texto aqui"></textarea>
+
+            <textarea id="textArea" placeholder="Ingresa tu texto aqui"></textarea>
             <div class="botones">
-                <button type="button"  id="encriptar" onclick="encriptar()">Encriptar</button>
-                <button type="button"  id="desencriptar" onclick="desencriptar()">Desencriptar</button> 
+                <button type="button" id="encriptar" onclick="encriptar()"> Encriptar</button>
+                <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <button type="button" id="limpiar" onclick="borrarTexto()">Limpiar</button>
             </div>
         </section>
-
-        <section class="seccion-imagen">
+        <!--- Seccion Imagen --->
+        <section class="seccion-imagen">    
             <div class="conten-imagen">
-                <img src="img/hacker-2.jpg" alt="" id="imagen">
+                <img src="img/hacker-2.jpg"  id="imagen">
             </div>
             <div class="parrafo">
-                <h3>Ningun mensaje fue encontrado</h3>  
-                <textarea name="" id="textoDesencriptado" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar" ></textarea>
-                <button type="button"  value="boton-copiar" id="boton-copiar" onclick="copy()">Copiar texto</button>
-             </div>           
-            
+                <h3 id="h3-encontrado">Ningun mensaje fue encontrado</h3>
+                <textarea name="" id="textoDesencriptado" cols="30" rows="10"
+                    placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea>
+                <button type="button" value="boton-copiar" id="boton-copiar" onclick="copy()">Copiar texto</button>
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-        <p><span>Code for Jonatan Tarriba 2023</span> </p>
+        <p><span>Code for <a href="https://github.com/jonatan52/Challenge_Alura_Encriptador-/tree/main/Encriptador" target="_blank">Jonatan Tarriba 2023</span></a></p>
+                 
     </footer>
-    
+
 </body>
+
 </html>
