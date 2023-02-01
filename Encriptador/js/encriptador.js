@@ -20,7 +20,7 @@
 function encriptar() {
     var texto = document.getElementById("textArea").value.toLowerCase();
     element = document.getElementById("imagen");
-    element.src = src="img/haker.jpg";
+    element.src = src = "img/haker.jpg";
 
     var texArea = texto.replace(/e/img, "enter");
     var texArea = texArea.replace(/o/img, "ober");
@@ -33,14 +33,14 @@ function encriptar() {
     document.getElementById("boton-copiar").style.display = "show";
     document.getElementById("boton-copiar").style.display = "inherit";
     document.getElementById("h3-encontrado").style.display = "none";
-    
-    
+
+
 }
 /*-----------Funcion Desencriptar---------------*/
 function desencriptar() {
     var texto = document.getElementById("textArea").value.toLowerCase();
     element = document.getElementById("imagen");
-    element.src = src="img/hacker-2.jpg";
+    element.src = src = "img/hacker-2.jpg";
 
     var texArea = texto.replace(/enter/img, "e");
     var texArea = texArea.replace(/ober/img, "o");
@@ -65,10 +65,10 @@ function copy() {
 
 /*-----------Funcion borrar ---------------*/
 
-function borrarTexto(){
-    var borrar = document.getElementById("textArea","textoDesencriptado" ).value="";
-    borrar = document.getElementById("textoDesencriptado" ).value="";
+function borrarTexto() {
+    var borrar = document.getElementById("textArea", "textoDesencriptado").value = "";
+    borrar = document.getElementById("textoDesencriptado").value = "";
     borrar = document.getElementById("h3-encontrado").value = "show";
 
-    
+
 }
