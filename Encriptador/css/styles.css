@@ -63,7 +63,8 @@ section{
     margin-top: 30px;
     border-radius: 20px;
     text-align: center;
-    font-size: 20px;    
+    font-size: 20px;  
+    padding: 10px;  
     
 }
 
@@ -72,6 +73,7 @@ section{
 .botones{
     margin-top: 20px;
     text-align: center;
+    font-size: 40px;
 }
 
 
@@ -83,6 +85,7 @@ section{
     background-color: #2C3333;
     color: white;
 }
+
 #desencriptar{
     width: 30%;
     height: 40px;
@@ -90,6 +93,17 @@ section{
     border: 0;
     background-color: #2C3333;
     color: white;
+}
+
+#encriptar:hover{
+    border: 1px solid white;
+    transform: scale(1.1);
+    
+}
+
+#desencriptar:hover{
+    border: 1px solid white;
+    transform: scale(1.1);
 }
 
 
@@ -119,20 +133,24 @@ section{
     color: white;
     padding: 10px;
     
+    
 }
 
 .parrafo p{
     margin: 10px;
+
 }
 
+
 #textoDesencriptado{
+    text-align: center;
     width: 325px;
     height:155px;
     border-radius: 20px;
     resize: none;
+    margin-top: 10px;
     padding: 10px;
 }
-
 
 
 #boton-copiar{
@@ -142,8 +160,16 @@ section{
     border: 0;
     background-color: #2C3333;
     color: white;
-    margin: 5px;
     display: none;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 35%;
+      
+}
+
+#boton-copiar:hover{
+    border: 1px solid white;
+    transform: scale(1.1);
 }
 
 
