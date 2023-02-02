@@ -166,12 +166,15 @@ section {
 
 
 #textoDesencriptado {
-    text-align: center;
-    width: 325px;
-    height: 155px;
-    border-radius: 20px;
+    
+    width: 80%;
+    height: 5%;
     resize: none;
-    margin-top: 10px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    border-radius: 20px;
+    text-align: center;
     padding: 10px;
 }
 
@@ -219,3 +222,7 @@ a:hover {
 
     text-shadow: 0 0 5px #03e9f4;
 }
+
+/*------ Media querys -----------*/
+
+ 
