@@ -12,20 +12,29 @@
 
 <body>
     <header>
-        <h1>Challenger Alura</h1>
+        <div id="div-h1"><h1>Challenger Alura</h1></div> 
+        <div id="div-icon">
+            <a href="https://github.com/jonatan52" target="_blank"><img src="img/icons8-github.svg" alt="" class="icon-git"> </a>
+            <a href="https://www.linkedin.com/in/jonatan-tarriba-calderin/" target="_blank"><img src="img/icons8-linkedin.svg" alt="" class="icon-git"></a>
+        </div>
+        
     </header>
-    <!-- <hr> -->
+    
     <main class="main">
         <!--- Seccion Uno --->
         <section class="seccion-uno">
-
-            <textarea id="textArea" placeholder="Ingresa tu texto aqui"></textarea>
+            <div class="div-textArea">
+                <textarea id="textArea" placeholder="Ingresa tu texto aqui" cols="30" rows="10"></textarea>
+            </div>
+            
             <div class="botones">
+                
                 <button type="button" id="encriptar" onclick="encriptar()"> Encriptar</button>
                 <button type="button" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
                 <button type="button" id="limpiar" onclick="borrarTexto()">Limpiar</button>
             </div>
         </section>
+
         <!--- Seccion Imagen --->
         <section class="seccion-imagen">
             <div class="conten-imagen">
